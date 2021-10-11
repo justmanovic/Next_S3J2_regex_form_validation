@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- un nom
+un prénom
+un âge
+un email
+une confirmation de l'email
+un password
+une confirmation de password
+Un radio permettant de valider ou non que l'on accepte les CGU. -->
+
+  <!-- Aucun des champs ne devra être vide.
+L'email et sa confirmation doivent être le même
+Le password et sa confirmation également
+L'âge doit être supérieur à 18
+Le password doit contenir au moins 6 caractères (stp, ne mets JAMAIS d'autres règles pour les mots de passe)
+L'email doit suivre un pattern d'email classique
+Les CGU doivent être acceptées
+Le prénom doit faire au minimum 3 lettres -->
+
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="name">Nom</label>
+        <input type="text" id="name">
+      </div>
+      <div class="form-group">
+        <label for="first-name">Prénom</label>
+        <input type="text" id="first-name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email">
+      </div>
+      <div class="form-group">
+        <label for="email-confirm">Confirmation de l'email</label>
+        <input type="email" id="email-confirm">
+      </div>
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" id="age">
+      </div>
+      <div class="form-group">
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password">
+      </div>
+      <div class="form-group">
+        <label for="password2">Confirmation du mot de passe</label>
+        <input type="password" id="password2">
+      </div>
+      <div class="form-group">
+        <input type="radio" id="contactChoice1" name="contact" value="email">
+        <label for="contactChoice1">Email</label>
+
+        <input type="radio" id="contactChoice2" name="contact" value="telephone">
+        <label for="contactChoice2">Téléphone</label>
+
+        <input type="radio" id="contactChoice3" name="contact" value="courrier">
+        <label for="contactChoice3">Courrier</label>
+      </div>
+
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

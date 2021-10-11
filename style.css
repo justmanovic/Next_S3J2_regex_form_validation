@@ -1,0 +1,25 @@
+label {
+  display: block;
+}
+
+.container {
+  width:max-content;  
+}
+
+input {
+  width: 20rem;
+  padding: 0.5rem;
+  border: 2px blue solid;
+}
+
+.form-group:not(:last-of-type) {
+  margin-bottom: 1.5rem;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
