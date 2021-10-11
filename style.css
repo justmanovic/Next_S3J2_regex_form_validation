@@ -1,19 +1,51 @@
 label {
   display: block;
+  margin-bottom: 0.25rem;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .container {
   width:max-content;  
 }
 
-input {
-  width: 20rem;
+input[type="submit"]{
+  width: 100%;
+  border: none;
+  padding: 0.5rem 1rem;
+  border: 1px transparent solid;
+  cursor: pointer;
+  background-color: #92daca;
+  transition: .25s all;  
+  margin-top: 2rem;
+}
+
+input[type="submit"]:hover{
+  background-color: rgb(0, 87, 128);
+  color: white;
+}
+
+small {
+  display: block;
+  color: red;
+  margin-top:0.25rem;
+}
+
+input:not(input[type="checkbox"], input[type="submit"]) {
+  width: 25rem;
   padding: 0.5rem;
-  border: 2px blue solid;
+  border: 2px rgb(141, 141, 141) solid;
+  border-radius: 4px;
+}
+
+input:not(input[type="checkbox"], input[type="submit"]):focus {
+  outline:0;
 }
 
 .form-group:not(:last-of-type) {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 body {
@@ -22,4 +54,20 @@ body {
   align-items: center;
   justify-content: center;
   font-family: sans-serif;
+}
+
+.success {
+  color:green
+}
+
+.fail {
+  color:red
+}
+
+input:not(input[type="checkbox"], input[type="submit"]).success {
+  border:2px green solid;
+}
+
+input:not(input[type="checkbox"], input[type="submit"]).fail {
+  border:2px red solid;
 }

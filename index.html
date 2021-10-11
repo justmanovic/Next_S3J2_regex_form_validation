@@ -11,15 +11,6 @@
 
 <body>
 
-  <!-- un nom
-un prénom
-un âge
-un email
-une confirmation de l'email
-un password
-une confirmation de password
-Un radio permettant de valider ou non que l'on accepte les CGU. -->
-
   <!-- Aucun des champs ne devra être vide.
 L'email et sa confirmation doivent être le même
 Le password et sa confirmation également
@@ -34,41 +25,53 @@ Le prénom doit faire au minimum 3 lettres -->
       <div class="form-group">
         <label for="name">Nom</label>
         <input type="text" id="name">
+        <small id="error-name"></small>
       </div>
       <div class="form-group">
         <label for="first-name">Prénom</label>
         <input type="text" id="first-name">
+        <small id="error-first-name"></small>
+
       </div>
       <div class="form-group">
         <label for="email">Email</label>
         <input type="email" id="email">
+        <small id="error-email"></small>
+
       </div>
       <div class="form-group">
         <label for="email-confirm">Confirmation de l'email</label>
         <input type="email" id="email-confirm">
+        <small id="error-email-confirm"></small>
+
       </div>
       <div class="form-group">
         <label for="age">Age</label>
         <input type="number" id="age">
+        <small id="error-age"></small>
+
       </div>
       <div class="form-group">
         <label for="password">Mot de passe</label>
         <input type="password" id="password">
+        <small id="error-password"></small>
+
       </div>
       <div class="form-group">
         <label for="password2">Confirmation du mot de passe</label>
         <input type="password" id="password2">
+        <small id="error-password-confirm"></small>
+
       </div>
       <div class="form-group">
-        <input type="radio" id="contactChoice1" name="contact" value="email">
-        <label for="contactChoice1">Email</label>
+        <div>
+          <input type="checkbox" id="cgu" name="cgu" value="email">
+          <label class="inline-block" for="cgu">J'accepte les CGU</label>
+          <small id="error-cgu"></small>
 
-        <input type="radio" id="contactChoice2" name="contact" value="telephone">
-        <label for="contactChoice2">Téléphone</label>
-
-        <input type="radio" id="contactChoice3" name="contact" value="courrier">
-        <label for="contactChoice3">Courrier</label>
+        </div>
       </div>
+      <input type="submit" value="Je m'inscris">
 
     </form>
   </div>
