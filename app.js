@@ -1,3 +1,5 @@
+
+
 const errors = document.querySelectorAll("#errors")
 const nameInput = document.querySelector("#name")
 const firstName = document.querySelector("#first-name")

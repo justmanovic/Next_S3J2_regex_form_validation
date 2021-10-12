@@ -27,7 +27,8 @@ input[type="submit"]:hover{
   color: white;
 }
 
-small {
+span {
+  font-size: 0.85rem;
   display: block;
   color: red;
   margin-top:0.25rem;
@@ -70,4 +71,8 @@ input:not(input[type="checkbox"], input[type="submit"]).success {
 
 input:not(input[type="checkbox"], input[type="submit"]).fail {
   border:2px red solid;
+}
+
+.hidden {
+  display: none;
 }
