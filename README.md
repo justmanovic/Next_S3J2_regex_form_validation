@@ -1,1 +1,1 @@
-Il y a certainement un moyen de refactoriser le tout !
+app2 et index2 ==> refactorisé !
